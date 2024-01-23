@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = +prompt("nhap so luong sinh vien");
+      function Person(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      let arr=new Array()
+      for(let i=0;i<n;i++){
+        let name =prompt('nhập tên học sinh  :')
+        let age =prompt('nhập tuổi học sinh  :')
+        let a = new Person(name,age)
+        arr.push(a)
+      }
+      console.log(arr);
+
+    </script>
+  </body>
+</html>

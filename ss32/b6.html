@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    function compare(a, b) {
+        return a.price - b.price;
+      }
+      let n = +prompt("nhap so luong ");
+      function Products(id, name, price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+      }
+      let arr = new Array();
+      for (let i = 0; i < n; i++) {
+        let id = prompt("nhập id  :");
+        let name = prompt("nhập tên  :");
+        let price = prompt("nhập giá :");
+        let a = new Products(id, name, price);
+        arr.push(a);
+      }
+      console.log(arr.sort(compare));
+    </script>
+  </body>
+</html>
